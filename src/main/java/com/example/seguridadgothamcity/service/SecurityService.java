@@ -15,7 +15,8 @@ public class SecurityService {
     }
 
     public Iterable<SecurityEvent> getAllEvents() {
-        return repository.findAll();
+        return repository.findAllOrdered();
     }
 }
+
 
